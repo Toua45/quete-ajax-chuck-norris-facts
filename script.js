@@ -9,8 +9,8 @@ function fetchChuckNorrisJokesJSON() {
 
             // Build a block of HTML
             const jokesHtml = `
-            <p><strong>${jokes.value}</strong></p> <!--value correspond au blagues trouvées sur le code source de l'API https://api.chucknorris.io/jokes/random -->
-            <img src="${jokes.icon_url}" />   <!--icon_url correspond à l'avatar de Chick Norris trouvé sur le code source de l'API https://api.chucknorris.io/jokes/random -->         
+            <p><strong>${jokes.value}</strong></p> 
+            <img src="${jokes.icon_url}" />           
             `;
             document.querySelector('#chuck-norris').innerHTML = jokesHtml;
         });
