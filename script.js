@@ -1,10 +1,10 @@
 function fetchChuckNorrisJokesJSON() {
     const url = `https://api.chucknorris.io/jokes/random`;
     axios.get(url)
-        .then(function(response) {
+        .then(function (response) {
             return response.data;
         })
-        .then(function(jokes) {
+        .then(function (jokes) {
             console.log('data decoded from JSON:', jokes);
 
             // Build a block of HTML
@@ -17,7 +17,7 @@ function fetchChuckNorrisJokesJSON() {
 }
 
 let elementButton = document.getElementById('load');
-elementButton.addEventListener('click', function() {
+elementButton.addEventListener('click', function () {
     fetchChuckNorrisJokesJSON();
 });
 
